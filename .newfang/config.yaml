@@ -1,0 +1,19 @@
+project:
+  name: "NewFang Spine"
+  root: "."
+
+models:
+  planner: "qwen2.5:14b"
+  auditor: "llama3.1:8b"
+  editor: "qwen2.5:7b"
+  code_reader: "deepseek-coder:16b"
+  embeddings: "nomic-embed-text"
+
+endpoints:
+  ollama: "http://localhost:11434"
+  lm_studio: "http://localhost:1234/v1"
+
+standards:
+  docs_dir: "docs"
+  code_dir: "src"
+  archive_dir: "docs/99-archive"
